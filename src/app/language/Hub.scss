@@ -1,0 +1,28 @@
+@use "../../styles/main";
+
+.hub {
+    &__sections {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        background-color: main.$hub-bg;
+        min-height: 82vh;
+    }
+
+    &__main-section {
+        width: 100%;
+        min-height: 82vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0.8rem;
+    }
+}
+
+@include main.color-mode(dark) {
+    .hub {
+        &__sections {
+            background-color: main.$hub-bg-dark;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+next.js
+ESLint - static code analysis
+
+Shift + Alt + F - format code
+
+--save-dev -> install dev dependencies
+TWITTER_USER=nextjs
+TWITTER_URL=https://x.com/$TWITTER_USER
+
+loading order:
+layout.js
+template.js
+error.js (React error boundary)
+loading.js (React suspense boundary)
+not-found.js (React error boundary)
+page.js or layout.js
+
+<Link> - navigation
+https://fonts.google.com/variablefonts#font-families
+
+sass(https://sass-lang.com/guide/#variables):
+_partial - no generate css
+@use 'base'; - use variables (from _base.scss)
+@mixin theme($theme: DarkGray){ background: $theme;} - use boilerplate (@include theme($theme: DarkRed))
+%message-shared {border: 1px solid #ccc;} - boilerplate selector
+@extend  - lets you share a set of CSS properties from one selector to another.(@extend %message-shared)
+@forward - create a base, use (@use for using variables)(no generate css)
+@import -  deprecated use(@use, @forward)
+
+react-bootstrap(https://react-bootstrap.netlify.app/docs/getting-started/introduction)
